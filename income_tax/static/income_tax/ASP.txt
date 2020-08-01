@@ -1,0 +1,12 @@
+Pan:ASP
+Aadhar:None
+Name:None
+
+Email:None
+Phno:None
+r1:on
+r2:None
+no:123456789
+Date1:2020-04-01
+Date2:2020-04-13
+r4:onstring1

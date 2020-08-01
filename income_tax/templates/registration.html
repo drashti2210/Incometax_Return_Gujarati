@@ -1,0 +1,121 @@
+<html>
+	{% block content %}
+	{% load static %}
+
+    {% if form.errors %}
+   
+    <p class="error"> Invalid Username or Password </p>
+    {% endif %}       
+<head><link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Mobirise v3.12.1, mobirisethemes.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="{% static 'income_tax/assets/images/logo.png" type="image/x-icon">
+<meta name="description" content="">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+<link rel="stylesheet" href="{% static 'income_tax/assets/bootstrap-material-design-font/css/material.css">
+<link rel="stylesheet" href="{% static 'income_tax/assets/tether/tether.min.css' %}">
+<link rel="stylesheet" href="{% static 'income_tax/assets/bootstrap/css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'income_tax/assets/dropdown/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'income_tax/assets/animate.css/animate.min.css' %}">
+<link rel="stylesheet" href="{% static 'income_tax/assets/theme/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'income_tax/assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</head>
+
+<section id="menu-1">
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top">
+        <div class="container">
+
+            <div class="mbr-table">
+                <div class="mbr-table-cell">
+
+                    <div class="navbar-brand">
+                        
+                        <a class="navbar-caption text-black" >TAX-TIME</a>
+                    </div>
+
+                </div>
+                <!-- <div class="mbr-table-cell">
+
+                     <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="hamburger-icon"></div>
+                    </button> -->
+
+                    <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="close-icon"></div>
+                    </button>
+
+                </div>  
+            </div>
+
+        </div>
+    </nav>
+
+</section>
+
+<div class="wrapper fadeInDown">
+	<div id="formContent">
+	  <!-- Tabs Titles -->
+  
+	  <!-- Icon -->
+	  <div class="fadeIn first">
+		<h2>Register</h2>
+	  </div>
+  
+	  <!-- Login Form -->
+	  <form action="/income_tax/registration/" method="POST">{% csrf_token %}
+		<input type="text" name="eid"id="login" class="fadeIn second"  placeholder="username">
+		<input type="password" name="password" id="password" class="fadeIn third"  placeholder="password">
+<input type="password" class="fadeIn third" name="password1" id="txtConfirmPassword" placeholder="confirm password"required>
+
+<input type="submit"class="fadeIn fourth" value="submit" onclick="return Validate()"></td></tr>
+	
+	  </form>
+  
+	  <!-- Remind Passowrd -->
+  	</div>
+  </div>
+  <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2p" style="background-color: rgb(0, 0, 0); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+    
+    <div class="container">
+        <p class="text-xs-center">Copyright (c) TAX-TIME | <a href="license.txt" class="text-white">License</a></p>
+    </div>
+</footer>
+
+
+  <script src="{% static 'income_tax/assets/web/assets/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'income_tax/assets/tether/tether.min.js' %}"></script>
+  <script src="{% static 'income_tax/assets/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'income_tax/assets/smooth-scroll/smooth-scroll.js' %}"></script>
+  <script src="{% static 'income_tax/assets/dropdown/js/script.min.js' %}"></script>
+  <script src="{% static 'income_tax/assets/touch-swipe/jquery.touch-swipe.min.js' %}"></script>
+  <script src="{% static 'income_tax/assets/viewport-checker/jquery.viewportchecker.js' %}"></script>
+  <script src="{% static 'income_tax/assets/jarallax/jarallax.js' %}"></script>
+  <script src="{% static 'income_tax/assets/theme/js/script.js' %}"></script>
+  
+
+  {% endblock %}
+  </html>
+		 

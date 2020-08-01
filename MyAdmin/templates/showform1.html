@@ -1,0 +1,8 @@
+{% for form in forms %}
+<form method="GET" action="/MyAdmin/detailform/">
+    {{ form.Id }}
+    <input type="hidden" name="id" value="{{ form.Id }}" />
+    <input type="submit" />
+    <br/>
+</form>
+{% endfor %}

@@ -1,0 +1,496 @@
+
+
+<!DOCTYPE html>
+
+<html>{% block content %}
+    {% load static %}
+
+<head>
+    <title></title> <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v3.12.1, mobirisethemes.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{% static 'income_tax/assets/images/logo.png" type="image/x-icon">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="{% static 'income_tax/assets/bootstrap-material-design-font/css/material.css">
+    <link rel="stylesheet" href="{% static 'income_tax/assets/tether/tether.min.css' %}">
+    <link rel="stylesheet" href="{% static 'income_tax/assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'income_tax/assets/dropdown/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'income_tax/assets/animate.css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'income_tax/assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'income_tax/assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+    
+    
+    <!------ Include the above in your HEAD tag ---------->
+    <style>
+        /* BASIC */
+        
+        
+        body {
+          font-family: "Poppins", sans-serif;
+          height: 100vh;
+        }
+        
+        a {
+          color: #92badd;
+          display:inline-block;
+          text-decoration: none;
+          font-weight: 400;
+        }
+        
+        h2 {
+          text-align: center;
+          font-weight: 600;
+          text-transform: uppercase;
+          display:inline-block;
+          margin: 40px 8px 10px 8px; 
+        }
+        
+        
+        
+        /* STRUCTURE */
+        
+        .wrapper {
+          display: flex;
+          align-items: center;
+          flex-direction: column; 
+          justify-content: center;
+          width: 100%;
+          min-height: 100%;
+          padding: 20px;
+        }
+        
+        #formContent {
+          -webkit-border-radius: 10px 10px 10px 10px;
+          border-radius: 10px 10px 10px 10px;
+          margin: 10%;
+          /* margin-left: 15%; */
+          background: #fff;
+          padding: 10px;
+          width: 90%;
+          max-width: 900px;
+          position: relative;
+          padding: 0px;
+          -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+          box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+          text-align: center;
+        }
+        
+        #formFooter {
+          background-color: #f6f6f6;
+          border-top: 1px solid #dce8f1;
+          padding: 25px;
+          text-align: center;
+          -webkit-border-radius: 0 0 10px 10px;
+          border-radius: 0 0 10px 10px;
+        }
+        
+        /* FORM TYPOGRAPHY*/
+        
+        input[type=button], input[type=submit], input[type=reset]  {
+          background-color: #56baed;
+          border: none;
+          color: white;
+          padding: 15px 80px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          text-transform: uppercase;
+          font-size: 13px;
+          -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+          box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+          -webkit-border-radius: 5px 5px 5px 5px;
+          border-radius: 5px 5px 5px 5px;
+          margin: 5px 20px 40px 20px;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
+        
+        input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+          background-color: #39ace7;
+        }
+        
+        input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+          -moz-transform: scale(0.95);
+          -webkit-transform: scale(0.95);
+          -o-transform: scale(0.95);
+          -ms-transform: scale(0.95);
+          transform: scale(0.95);
+        }
+        
+        input[type=text],input[type=password],input[type=email] {
+          background-color: #f6f6f6;
+          border: none;
+          color: #0d0d0d;
+          padding: 15px 32px;
+          max-width: 700px;
+          /* text-align: center; */
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 5px;
+          
+          border: 2px solid #f6f6f6;
+          -webkit-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+          -ms-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+          -webkit-border-radius: 5px 5px 5px 5px;
+          border-radius: 5px 5px 5px 5px;
+        }
+        
+        input[type=text]:focus,input[type=email]:focus {
+          background-color: #fff;
+          border-bottom: 2px solid #5fbae9;
+        }
+        
+        
+        
+        
+        
+        /* ANIMATIONS */
+        
+        /* Simple CSS3 Fade-in-down Animation */
+        .fadeInDown {
+          -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+        }
+        
+        @-webkit-keyframes fadeInDown {
+          0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+          }
+          100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+          }
+        }
+        
+        @keyframes fadeInDown {
+          0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+          }
+          100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+          }
+        }
+        
+        /* Simple CSS3 Fade-in Animation */
+        @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+        @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+        @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+        
+        .fadeIn {
+          opacity:0;
+          -webkit-animation:fadeIn ease-in 1;
+          -moz-animation:fadeIn ease-in 1;
+          animation:fadeIn ease-in 1;
+        
+          -webkit-animation-fill-mode:forwards;
+          -moz-animation-fill-mode:forwards;
+          animation-fill-mode:forwards;
+        
+          -webkit-animation-duration:1s;
+          -moz-animation-duration:1s;
+          animation-duration:1s;
+        }
+        
+        .fadeIn.first {
+          -webkit-animation-delay: 0.4s;
+          -moz-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+        }
+        
+        .fadeIn.second {
+          -webkit-animation-delay: 0.6s;
+          -moz-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+        }
+        
+        .fadeIn.third {
+          -webkit-animation-delay: 0.8s;
+          -moz-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+        }
+        
+        .fadeIn.fourth {
+          -webkit-animation-delay: 1s;
+          -moz-animation-delay: 1s;
+          animation-delay: 1s;
+        }
+        
+        /* Simple CSS3 Fade-in Animation */
+        .underlineHover:after {
+          display: block;
+          left: 0;
+          bottom: -10px;
+          width: 0;
+          height: 2px;
+          background-color: #56baed;
+          content: "";
+          transition: width 0.2s;
+        }
+        
+        .underlineHover:hover {
+          color: #0d0d0d;
+        }
+        
+        .underlineHover:hover:after{
+          width: 100%;
+        }
+        
+        
+        
+        /* OTHERS */
+        
+        *:focus {
+            outline: none;
+        } 
+        
+        #icon {
+          width:60%;
+        }
+        </style>
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+</head>
+<body>
+    <div class="container">
+    <section id="menu-1">
+        <nav class="navbar navbar-dropdown navbar-fixed-top">
+            <div class="container">
+                <div class="mbr-table">
+                    <div class="mbr-table-cell">
+                        <div class="navbar-brand">
+                            
+                            <a class="navbar-caption text-black">TAX-TIME</a>
+                        </div>
+                    </div>
+                        <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
+     
+                          <li class="nav-item nav-btn"><a class="nav-link btn btn-black-outline btn-black" href="/income_tax/logout">Logout</a></li>
+                          <li class="nav-item nav-btn"><a class="nav-link btn btn-black-outline btn-black" href="/income_tax/profile2">Profile</a></li>                   </ul>
+                        <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                            <div class="close-icon"></div>
+                        </button>
+                    </div>  
+                
+            </div>
+        </nav>
+    </section>
+</div>    
+
+<div class="container">
+    <div class="fadeInDown">
+        <div id="formContent">
+            <div class="fadeIn first">
+                <h2>કુલ આવક</h2>
+            </div>
+            <div class="fadeIn first">
+                <p>
+                    તમારી આવકની માહિતી નીચે પ્રમાણે ભરો</p>
+            </div>
+<form action="/income_tax/itr1bform/" method="POST" class="box">{% csrf_token %}
+    <div class="panel panel-primary">
+        <div style="text-align: left;" class="panel-heading" data-toggle="collapse" data-target="#toggle1">માસિક આવક માહિતી</div>
+        <div class="collapse panel-body" id="toggle1">
+            <table>
+                 <tr>
+                <td>નામ:</td>
+                <td>
+                    <input name="userid" type="text"/></td>
+            </tr>
+            <tr>
+                <td>વર્ષ:</td>
+                <td>
+                    <input name="year" type="text"/></td>
+            </tr>
+            <tr>
+               <!-- <td class="auto-style3">વર્ષ:</td>
+                <td>
+                    <select id="Select1" name="year" >
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                    </select></td>
+            </tr>-->
+            <tr>
+                <td>મહિનો:</td>
+                <td>
+                    <select name="month">
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>કુલ પગાર:</td>
+                <td>
+                    <input name="gross_salary" type="text" /></td>
+            </tr>
+            <tr>
+                <td>વ્યવસાય વેરો:</td>
+                <td>
+                    <input name="professional_tax" type="text" /></td>
+            </tr>
+            <tr>
+                <td>બચત વેરો:</td>
+                <td>
+                    <input name="group_ins" type="text" /></td>
+            </tr>
+            <tr>
+                <td>જનરલ પ્રોવિડન્ટ ફંડ:</td>
+                <td>
+                    <input name="gpf" type="text" /></td>
+            </tr>
+            <tr>
+                <td>મકાન ભાડુ ભથ્થું:</td>
+                <td>
+                    <input name="hba" type="text" /></td>
+            </tr>
+            <tr>
+                <td>વ્યવસાયિક ખર્ચ:</td>
+                <td>
+                    <input name="service_ded" type="text" /></td>
+            </tr>
+            <tr>
+                <td>પી.એલ.આઇ.: </td>
+                <td>
+                    <input name="pli" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    વિમો:</td>
+                <td>
+                    <input name="lic" type="text" /></td>
+            </tr>
+            <tr>
+                <td>પરિવહન ખર્ચ:</td>
+                <td>
+                    <input name="trans_allow" type="text" /></td>
+            </tr>
+            <tr>
+                <td>માસિક કપાત:</td>
+                <td>
+                    <input name="month_ded" type="text" /></td>
+            </tr>
+            </table>
+            </div>
+    </div>
+    
+    <div class="panel panel-primary">
+        <div style="text-align: left;" class="panel-heading" data-toggle="collapse" data-target="#toggle2">વાર્ષિક આવક માહિતી</div>
+        <div class="collapse panel-body" id="toggle2">
+            <table>
+            <tr>
+                <td class="auto-style3">પ્રથમ મોંઘવારી ભથ્થું:</td>
+                <td>
+                    <input name="first_half_ded" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style3">દ્વિતીય મોંઘવારી ભથ્થું:</td>
+                <td>
+                    <input name="second_half_ded" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style3">ડી. એ. તફાવત:</td>
+                <td>
+                    <input name="da_diff" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style3">મુસાફરી ભાડુ ( એલ . ટી . સી):</td>
+                <td>
+                    <input name="trans_exp" type="text" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style3">એચ . આર .એ તફાવત:</td>
+                <td>
+                    <input name="hra_diff" type="text" /></td>
+            </tr>
+            <tr>
+              <td class="auto-style4">પી. પી. એફ.(દોઢ લાખ કરતાં ઓછું):</td>
+              <td class="auto-style5">
+                  <input name="ppf" type="text" /></td>
+          </tr>
+    </table>
+    </div>
+    </div>
+    <tr>
+        <td colspan="2" style="text-align: center">
+            <input name="Button1" type="submit" value="આગળ" />
+        </td>
+    </tr>
+</div>
+</form>
+
+{% endblock %}
+
+</form>
+</body>
+
+
+</html>

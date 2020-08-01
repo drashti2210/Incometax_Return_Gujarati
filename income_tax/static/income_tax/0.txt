@@ -1,0 +1,12 @@
+Pan:0
+Aadhar:૧
+Name:dhwani
+
+Email:jitinrocks100@gmail.com
+Phno:654667
+r1:on
+r2:on
+no:65456465
+Date1:2019-01-01
+Date2:2019-01-01
+r4:on

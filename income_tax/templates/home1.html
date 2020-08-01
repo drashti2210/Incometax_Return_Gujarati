@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% block content %}
+    {% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Rapid Bootstrap Template - Index</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Rapid - v2.0.0
+  * Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+
+    <div id="topbar">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://twitter.com/popat_dhwani" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/dhwani.popat.984" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/in/dhwani-popat-890171178/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+         
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light"><a href="#intro" class="scrollto"><span>TAX-TIME</span></a></h1>
+        <!-- <a href="#header" class="scrollto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+       
+        {%if request.user.is_superuser %}
+        <li ><a  href="/MyAdmin/Form_View/">Make forms</a></li>
+        <li ><a  href="/MyAdmin/show2form/">See Latest Forms</a></li>
+        <li ><a  href="/income_tax/logout/">Logout</a></li>
+        
+        {% elif  is_user %}
+        <li ><a  href="/income_tax/profile2">Profile</a></li>
+        <li ><a  href="/income_tax/itr1form1">Fill Old Form</a></li>
+
+        <li ><a  href="/income_tax/itr2">Fill New Form</a></li>
+        <li ><a  href="/MyAdmin/show2form/">FEEDBACK</a></li>
+        <li ><a  href="/income_tax/logout">Logout</a></li>
+        
+        {%else%}
+        <li ><a  href="/income_tax/login">Login</a></li>
+        <li ><a  href="/income_tax/new_registration">Register</a></li>
+        {%endif%}
+    </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <h2>BECAUSE IT TAKES <span>TIME!</span></h2>
+          <div>
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="{% static 'assets/img/intro-img.svg' %}" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img">
+              <img src="{% static 'income_tax/assets/images/ttd2.svg' %}" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content">
+              <h2>અમારા વિશે</h2>
+              <p> </p>
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i>સરળ ગુજરાતી ભાષા માં ફોર્મ ભરવા ની સગવળ પૂરી પાેડતી વેબસાઈટ</li>
+                <li><i class="ion-android-checkmark-circle"></i>ઇન્કમ ટેક્સ ની નવી અને જૂની બંને ગણતરી કલમ ૮૦,૮૦(સી) મુજબ</li>
+                <li><i class="ion-android-checkmark-circle"></i>અનુકૂળ સવાલ જવાબ માટે અનુકૂળ ફોર્મ પૂરા પડતી વેબસાઈટ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>હવે ટેક્સ ભરો સરળતાથી.......</h3>
+          </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">જાણો નવા ઇન્કમટેક્સ નિયમો</a></h4>
+              <p class="description">2020ના નવા બજેટ સત્રમાં દેશના નાણામંત્રી એ નવા ઈન્કમટેકસ નિયમોની જાહેરાત કરી....</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+              <h4 class="title"><a href="">ભરો તમારો ટેક્સ સમયસર</a></h4>
+              <p class="description">સમયસર ટેક્સ ભરો અને મેળવો અનેક ફાયદા તમારા રોકાણ અને બેન્ક લોનમાં....</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">સરળ ઇન્કમટેક્સ ગણતરી</a></h4>
+              <p class="description">તમારી આવકની માહિતી મુજબ સરળ ટેક્સ ગણતરી કરો અને વધુ ને વધુ બચત કરો....r</p>
+            </div>
+          </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container-fluid">
+
+        <header class="section-header">
+          <h3>અમે જ શા માટે?</h3>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="why-us-img">
+                <img src="{% static 'assets/img/features-1.svg' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="why-us-content">
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-diamond" style="color: #f058dc;"></i>
+                <h4>
+                    ગુજરાતી માં અને સરળ સમજાય એવા ફોર્મ</h4>
+              </div>
+
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-object-group" style="color: #ffb774;"></i>
+                <h4> બંને રીત નવી અને જૂની ટેક્સ ની ગણતરી
+                </h4>
+              </div>
+
+              <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-language" style="color: #589af1;"></i>
+                <h4>          લોકો ના મત પ્રમાણે લેવા માં આવતા બદલાવ                </h4>
+                 </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+         </section><!-- End Why Us Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+   
+    <!-- ======= Clients Section ======= -->
+   
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/mobile-nav/mobile-nav.js' %}"></script>
+  <script src="{% static 'assets/vendor/wow/wow.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+{% endblock %}
+</html>

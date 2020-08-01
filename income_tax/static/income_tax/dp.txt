@@ -1,0 +1,12 @@
+Pan:dp
+Aadhar:None
+Name:None
+
+Email:None
+Phno:None
+r1:None
+r2:None
+no:None
+Date1:None
+Date2:None
+r4:None
